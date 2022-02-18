@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bai14.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calc_bmi">
+        <h3>Calculate BMI</h3>
+        <form action="" name="form-BMI">
+            <input type="number" name="height" id="height" class="input_text" placeholder="cm" required 
+            oninvalid="this.setCustomValidity('Please, enter height here')" oninput="this.setCustomValidity('')">
+            <input type="number" name="weight" id="weight" class="input_text" placeholder="kg" required 
+            oninvalid="this.setCustomValidity('Please, enter weight here')" oninput="this.setCustomValidity('')">
+            <p id="result"></p>
+            <button type="button" onclick="calcBMI()" class="btn btn_calc">Thực hiện</button>
+            <button type="button" onclick="reset()" class="btn btn_reset">Huỷ</button>
+        </form>
+    </div>
+    <script src="./bai14.js"></script>
+</body>
+</html>
